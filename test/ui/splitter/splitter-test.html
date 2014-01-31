@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Splitter</title>
+    <script type="text/javascript" src="../../../node_modules/montage/montage.js" data-package="../../../"></script>
+    <script type="text/montage-serialization">
+        {
+            "test": {
+                "prototype": "test/ui/splitter/splitter-test[Test]",
+                "properties": {
+                    "splitter": {"@": "splitter"}
+                }
+            },
+
+            "splitter": {
+                "prototype": "../../../ui/splitter.reel",
+                "properties": {
+                    "element": {"#": "splitter"}
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Splitter</h1>
+
+    <div data-montage-id="splitter">
+        <div data-arg="first">
+            First
+        </div>
+        <div data-arg="second">
+            Second
+        </div>
+    </div>
+</body>
+</html>

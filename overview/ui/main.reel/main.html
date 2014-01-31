@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+
+        "vertical": {
+            "prototype": "montage-splitter/ui/splitter.reel",
+            "properties": {
+                "element": {"#": "vertical"},
+                "splitAxis": "vertical",
+                "valuePercentage": 50
+            }
+        },
+
+        "example": {
+            "prototype": "../example.reel",
+            "properties": {
+                "element": {"#": "example"}
+            }
+        },
+
+        "horizontal": {
+            "prototype": "montage-splitter/ui/splitter.reel",
+            "properties": {
+                "element": {"#": "horizontal"},
+                "splitAxis": "horizontal",
+                "valuePercentage": 50
+            }
+        }
+
+    }
+    </script>
+</head>
+<body >
+    <div data-montage-id="main">
+        <h1>montage-splitter</h1>
+
+        <h2>Components</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Sample</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Vertical Splitter</a></td>
+                    <td style="position: relative">
+                        <div data-montage-id="vertical">
+                            <div data-arg="first"  data-montage-id="example"></div>
+                            <div data-arg="second">
+                                Second
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Horizontal Splitter</a></td>
+                    <td style="position: relative">
+                        <div data-montage-id="horizontal">
+                            <div data-arg="first">
+                                First
+                            </div>
+                            <div data-arg="second">
+                                Second
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
